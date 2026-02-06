@@ -1,0 +1,447 @@
+/* ========================================
+   BioSite CSS Style Sheet
+   Author: Matthew Rozendaal
+   ======================================== */
+
+/* ========================================
+   General Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* ========================================
+   Header & Navigation
+   ======================================== */
+header {
+    background-color: #F5F5F5;
+    padding: 20px 0;
+    border-bottom: 3px solid #87CEEB;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #4169E1;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #4169E1;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #1E90FF;
+    text-decoration: underline;
+}
+
+/* Active page styling */
+header nav a.active {
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+/* ========================================
+   Main Content
+   ======================================== */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: calc(100vh - 200px);
+}
+
+/* ========================================
+   Headings
+   ======================================== */
+h1 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #87CEEB;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* ========================================
+   Links & Text Styling
+   ======================================== */
+a {
+    color: #4169E1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1E90FF;
+    text-decoration: underline;
+}
+
+.see-more {
+    color: #4169E1;
+    font-weight: 500;
+}
+
+.see-more:hover {
+    color: #1E90FF;
+}
+
+p {
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Index Page - Slideshow Section
+   ======================================== */
+.slideshow {
+    background-color: #f9f9f9;
+    border: 2px solid #87CEEB;
+    border-radius: 10px;
+    padding: 80px 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #999;
+}
+
+/* ========================================
+   Index Page - About Section
+   ======================================== */
+.about-section {
+    background-color: #f9f9f9;
+    border-left: 4px solid #87CEEB;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.about-section h2 {
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.about-section p {
+    margin: 10px 0;
+}
+
+/* ========================================
+   Index Page - Hobbies Section
+   ======================================== */
+.hobbies-section {
+    background-color: #f9f9f9;
+    border-left: 4px solid #87CEEB;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.hobbies-section h2 {
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.hobby-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #87CEEB;
+}
+
+.hobby-item p {
+    margin: 0;
+}
+
+/* ========================================
+   About Page - Portrait Section
+   ======================================== */
+.portrait-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.portrait {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 10px;
+    max-height: 70vh;
+    min-height: 25vh;
+}
+
+/* ========================================
+   About Page - Details Section
+   ======================================== */
+.about-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.about-left {
+    background-color: #f9f9f9;
+    border-left: 4px solid #87CEEB;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.about-left h3 {
+    color: #000;
+    margin-top: 0;
+    border-bottom: 2px solid #87CEEB;
+    padding-bottom: 10px;
+}
+
+.about-left p {
+    margin-bottom: 20px;
+}
+
+.about-right {
+    background-color: #f9f9f9;
+    border: 2px solid #87CEEB;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-right p {
+    margin: 0;
+}
+
+/* ========================================
+   Hobbies Page
+   ======================================== */
+.dropdown-container {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.hobby-dropdown {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #87CEEB;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.hobby-dropdown:hover {
+    border-color: #4169E1;
+}
+
+.hobby-dropdown:focus {
+    outline: none;
+    border-color: #4169E1;
+    box-shadow: 0 0 5px rgba(65, 105, 225, 0.3);
+}
+
+.hobby {
+    background-color: #f9f9f9;
+    border: 2px solid #87CEEB;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.hobby-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hobby-image {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #000;
+    border-radius: 10px;
+    max-height: 60vh;
+    min-height: 20vh;
+}
+
+.hobby-description {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 3px solid #87CEEB;
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+footer {
+    background-color: #F5F5F5;
+    border-top: 3px solid #87CEEB;
+    padding: 30px 20px;
+    text-align: center;
+    color: #000;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        gap: 20px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portrait {
+        max-width: 100%;
+    }
+
+    .hobby-image {
+        max-width: 100%;
+    }
+
+    .dropdown-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+        font-size: 12px;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .slideshow {
+        padding: 40px 20px;
+        min-height: 150px;
+    }
+
+    .about-section,
+    .hobbies-section {
+        padding: 15px;
+    }
+
+    .hobby-item {
+        padding: 10px;
+    }
+
+    .hobby {
+        padding: 15px;
+    }
+}

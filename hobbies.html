@@ -1,0 +1,90 @@
+<!--
+Matthew Rozendaal
+Hobbies Page for Bio Site
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Hobbies page for Bio Site">
+    <meta name="keywords" content="CSD340,BioSite">
+    <meta name="robots" content="nofollow">
+    <meta name="author" content="Matthew Rozendaal">
+
+    <title>Hobbies</title>
+    <link rel="stylesheet" type="text/css" href="bioSite.css">
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="header-content">
+            <h1>Shirley Rozendaal</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="hobbies.html">Hobbies</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Hobbies</h1>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown-container">
+            <select class="hobby-dropdown" onchange="jumpToHobby(this.value)">
+                <option value="">Jump to a hobby...</option>
+                <option value="hobby1">Hobby 1</option>
+                <option value="hobby2">Hobby 2</option>
+                <option value="hobby3">Hobby 3</option>
+            </select>
+        </div>
+
+        <!-- Hobby 1 -->
+        <section class="hobby" id="hobby1">
+            <div class="hobby-image-container">
+                <img src="hobby1.jpg" alt="Hobby 1 Picture" class="hobby-image">
+            </div>
+            <p class="hobby-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+
+        <!-- Hobby 2 -->
+        <section class="hobby" id="hobby2">
+            <div class="hobby-image-container">
+                <img src="hobby2.jpg" alt="Hobby 2 Picture" class="hobby-image">
+            </div>
+            <p class="hobby-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <!-- Hobby 3 -->
+        <section class="hobby" id="hobby3">
+            <div class="hobby-image-container">
+                <img src="hobby3.jpg" alt="Hobby 3 Picture" class="hobby-image">
+            </div>
+            <p class="hobby-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Standard Footer and page map here</p>
+    </footer>
+
+    <script>
+        function jumpToHobby(hobbyId) {
+            if (hobbyId) {
+                document.getElementById(hobbyId).scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>
