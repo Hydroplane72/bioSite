@@ -141,7 +141,7 @@ p {
     background-color: #f9f9f9;
     border: 2px solid #87CEEB;
     border-radius: 10px;
-    padding: 80px 40px;
+    padding: 40px;
     text-align: center;
     margin-bottom: 40px;
     min-height: 250px;
@@ -150,6 +150,16 @@ p {
     justify-content: center;
     font-size: 18px;
     color: #999;
+}
+
+.slideshow-image {
+    max-width: 100%;
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
 }
 
 /* ========================================
@@ -212,11 +222,15 @@ p {
 .portrait {
     max-width: 500px;
     width: 100%;
-    height: auto;
-    border: 3px solid #000;
+    height: 420px;
     border-radius: 10px;
-    max-height: 70vh;
-    min-height: 25vh;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.portrait.is-fading-out {
+    opacity: 0;
 }
 
 /* ========================================
@@ -308,10 +322,11 @@ p {
 .hobby-image {
     max-width: 100%;
     height: auto;
-    border: 3px solid #000;
     border-radius: 10px;
     max-height: 60vh;
     min-height: 20vh;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .hobby-description {
